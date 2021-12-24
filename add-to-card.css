@@ -1,0 +1,66 @@
+body {
+    display: flex;
+}
+
+#por {
+    font-size: 25px;
+    font-weight: bold;
+    color: coral;
+    padding-left: 10px;
+}
+
+#option1 {
+    padding: 5px;
+    margin-left: 10px;
+    color: red;
+    position: absolute;
+    top: 29px;
+    left: 250px;
+}
+
+.card-poto img {
+    margin-left: 15px;
+    width: 350px;
+    height: 450px;
+    position: absolute;
+    left: 400px;
+    top: 10px;
+}
+
+.text {
+    width: 350px;
+    height: 450px;
+    text-indent: 25px;
+    text-align: justify;
+    padding: 10px 12px;
+    position: absolute;
+    /* background: rgba(0, 0, 0, 0.2); */
+    top: 5px;
+    left: 770px;
+    font-weight: bolder;
+}
+
+.content-i {
+    position: relative;
+    height: 80vh;
+    width: 100%;
+    background-color: gray;
+    border-radius: 10px;
+}
+
+#cat {
+    padding: 10px 35px;
+    font-weight: bolder;
+    background-color: rgb(112, 145, 245);
+    border-radius: 5px;
+    box-shadow: 0px 2px 7px blue;
+    position: absolute;
+    left: 910px;
+    top: 440px;
+    transition: all 0.3s ease-in-out;
+}
+
+#cat:hover {
+    background-color: blue;
+    color: white;
+}

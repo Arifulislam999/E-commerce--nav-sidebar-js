@@ -1,0 +1,359 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+
+nav {
+    padding: 5px 20px;
+    width: 100%;
+    display: flex;
+    justify-content: right;
+    transition: all 0.5s;
+    z-index: +111;
+    position: absolute;
+}
+
+.imag {
+    position: relative;
+}
+
+.man img {
+    position: absolute;
+    width: 372px;
+    top: 19px;
+    right: 10px;
+}
+
+.text img {
+    position: absolute;
+    width: 450px;
+    top: 50px;
+}
+
+#t-1 {
+    position: absolute;
+    width: 450px;
+    left: 200px;
+    top: 70px;
+}
+
+#t-2 {
+    position: absolute;
+    width: 330px;
+    left: 390px;
+    top: 160px;
+}
+
+#t-3 {
+    position: absolute;
+    width: 280px;
+    top: 205px;
+    left: 520px;
+}
+
+.logo {
+    position: absolute;
+    width: 50px;
+    left: 10px;
+    font-family: arif;
+    text-transform: capitalize;
+}
+
+@font-face {
+    font-family: arif;
+    src: url(./Aletriat\ Italic.otf);
+}
+
+ul li {
+    display: inline-block;
+    padding: 8px 15px;
+}
+
+ul li a {
+    font-weight: bolder;
+    font-size: 18px;
+    text-transform: uppercase;
+    color: white;
+}
+
+#contain {
+    transition: all 1s;
+    position: relative;
+}
+
+#sub-menu {
+    position: absolute;
+    display: none;
+    /* background-color: gray; */
+    border-radius: 10px;
+    transition: all 0.5s;
+}
+
+#sub-menu a {
+    display: block;
+    font-size: 15px;
+    color: white;
+    margin-top: 6px;
+    transition: all 0.5s;
+    padding: 2px;
+    text-transform: capitalize;
+}
+
+#sub-menu a:hover {
+    background-color: wheat;
+    color: black;
+    border-radius: 5px;
+}
+
+#contain:hover #sub-menu {
+    display: block;
+    transition: all 0.5s;
+}
+
+#contain:hover .fa-chevron-right {
+    transform: rotate(90deg);
+    position: absolute;
+    margin-left: 2px;
+    color: black;
+}
+
+
+/* New */
+
+#ant li a {
+    position: relative;
+}
+
+#ant li a::after {
+    contain: "Ariful Islam";
+    width: 10%;
+    height: 2px;
+    background: red;
+    position: absolute;
+    bottom: -5px;
+    left: 25px;
+}
+
+#home {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1px;
+    height: 90vh;
+    width: 100%;
+    background-color: tomato;
+    text-align: center;
+    text-transform: uppercase;
+    transition: all 0.5s;
+    font-size: 65px;
+}
+
+.container ul li:hover {
+    text-shadow: 2px 3px 5px black;
+}
+
+.social a {
+    padding: 5px 2px;
+    cursor: pointer;
+    display: flex;
+    transition: all 0.5s;
+}
+
+.fa-facebook-f {
+    color: #3b5998;
+}
+
+.fa-instagram {
+    color: #8a3ab9;
+}
+
+.fa-twitter-square {
+    color: #00acee;
+}
+
+.fa-pinterest {
+    color: #c8232c;
+}
+
+.fa-whatsapp-square {
+    color: #075e54;
+}
+
+.fa-youtube {
+    color: #ff0000;
+}
+
+.social a:hover {
+    transform: translateX(-15px);
+    background-color: white;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    margin-right: -0px;
+    transition: all 0.4s;
+}
+
+header {
+    background-color: cornflowerblue;
+    width: 100%;
+    height: 80vh;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    transition: all 0.5s;
+}
+
+.fa-chevron-right {
+    display: block;
+    position: absolute;
+    margin-top: 1px;
+    padding-left: 4px;
+    transition: all 0.3s;
+}
+
+.sticky {
+    background-color: lightseagreen;
+    position: fixed;
+    box-shadow: 3px 4px 5px black;
+    color: red;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+#active {
+    background-color: lightskyblue;
+    border-radius: 5px;
+}
+
+.home-p {
+    border: 1px solid black;
+    height: 500px;
+    width: 30%;
+    padding-left: 10px;
+    position: relative;
+    margin-left: 10px;
+}
+
+.small-img {
+    display: block;
+    float: left;
+}
+
+.small-img img {
+    width: 90px;
+    display: block;
+    height: 120px;
+    margin-top: 4px;
+    opacity: 0.5;
+    transition: all 0.3s;
+}
+
+.small-img img:hover {
+    opacity: 1;
+    cursor: pointer;
+    transform: scale(0.97);
+}
+
+.big-img {
+    float: right;
+}
+
+.big-img img {
+    width: 255px;
+    height: 487px;
+    margin: 4px 10px;
+    transition: all 0.3s;
+    margin-right: 6px;
+    padding-right: 5px;
+}
+
+.big-img img:hover {
+    transform: scale(1.02);
+}
+
+.social {
+    position: absolute;
+    top: 55px;
+    right: 2px;
+    font-size: 30px;
+    display: block;
+    /* border: 1px solid red; */
+    background-color: white;
+    cursor: pointer;
+    z-index: 100;
+    position: fixed;
+    transition: all 1s;
+}
+
+.side-bar {
+    /* display: none; */
+    position: absolute;
+    right: -50px;
+}
+
+
+/* <--------Second Part Log in-------> */
+
+.extra {
+    position: absolute;
+    color: white;
+    top: 380px;
+}
+
+#ant {
+    position: relative;
+}
+
+#ant li a::after {
+    content: "";
+    width: 0%;
+    height: 2px;
+    position: absolute;
+    background-color: green;
+    left: 0px;
+    transition: all 0.3s ease-in-out;
+}
+
+#ant li a:hover::after {
+    content: "";
+    width: 59%;
+    height: 2px;
+    position: absolute;
+    background-color: red;
+    left: 0px;
+    transition: all 0.1s ease-in-out;
+}
+
+.shari {
+    width: 100%;
+    height: 90vh;
+    background-color: burlywood;
+    margin-top: 5px;
+    display: flex;
+    justify-content: space-between;
+}
+
+input {
+    position: absolute;
+    top: 102%;
+    padding: 8px 15px;
+    font-weight: bolder;
+    background-color: rgb(152, 152, 252);
+    border-radius: 5px;
+    left: 140px;
+    box-shadow: 0px 5px 7px black;
+    transition: all 0.2s ease-in-out;
+    cursor: pointer;
+}
+
+input:hover {
+    background-color: green;
+    color: white;
+}
+
+#log_in {
+    color: coral;
+}
